@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		02CEC9AC2BD182A700C52D4F /* SwiftfulFirebasePackagesExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CEC9AB2BD182A700C52D4F /* SwiftfulFirebasePackagesExampleApp.swift */; };
-		02CEC9AE2BD182A700C52D4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CEC9AD2BD182A700C52D4F /* ContentView.swift */; };
 		02CEC9B02BD182A800C52D4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02CEC9AF2BD182A800C52D4F /* Assets.xcassets */; };
 		02CEC9B42BD182A800C52D4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02CEC9B32BD182A800C52D4F /* Preview Assets.xcassets */; };
 		02CEC9BE2BD182A800C52D4F /* SwiftfulFirebasePackagesExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CEC9BD2BD182A800C52D4F /* SwiftfulFirebasePackagesExampleTests.swift */; };
 		02CEC9C82BD182A800C52D4F /* SwiftfulFirebasePackagesExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CEC9C72BD182A800C52D4F /* SwiftfulFirebasePackagesExampleUITests.swift */; };
 		02CEC9CA2BD182A800C52D4F /* SwiftfulFirebasePackagesExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CEC9C92BD182A800C52D4F /* SwiftfulFirebasePackagesExampleUITestsLaunchTests.swift */; };
+		02CEC9D82BD183C100C52D4F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CEC9D72BD183C100C52D4F /* RootView.swift */; };
+		02CEC9DB2BD1862800C52D4F /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CEC9DA2BD1862800C52D4F /* CreateAccountView.swift */; };
+		02CEC9E02BD1868100C52D4F /* AppAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CEC9DF2BD1868100C52D4F /* AppAlert.swift */; };
+		02CEC9E32BD1881C00C52D4F /* SwiftfulFirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 02CEC9E22BD1881C00C52D4F /* SwiftfulFirebaseAuth */; };
+		02CEC9E72BD1886F00C52D4F /* AsButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CEC9E62BD1886F00C52D4F /* AsButtonViewModifier.swift */; };
+		02CEC9E92BD34B0F00C52D4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02CEC9E82BD34B0F00C52D4F /* GoogleService-Info.plist */; };
+		02CEC9EC2BD3591700C52D4F /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CEC9EB2BD3591700C52D4F /* TabbarView.swift */; };
+		02CEC9EF2BD3592B00C52D4F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CEC9EE2BD3592B00C52D4F /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,6 @@
 /* Begin PBXFileReference section */
 		02CEC9A82BD182A700C52D4F /* SwiftfulFirebasePackagesExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulFirebasePackagesExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02CEC9AB2BD182A700C52D4F /* SwiftfulFirebasePackagesExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulFirebasePackagesExampleApp.swift; sourceTree = "<group>"; };
-		02CEC9AD2BD182A700C52D4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		02CEC9AF2BD182A800C52D4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02CEC9B12BD182A800C52D4F /* SwiftfulFirebasePackagesExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftfulFirebasePackagesExample.entitlements; sourceTree = "<group>"; };
 		02CEC9B32BD182A800C52D4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +51,14 @@
 		02CEC9C32BD182A800C52D4F /* SwiftfulFirebasePackagesExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftfulFirebasePackagesExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02CEC9C72BD182A800C52D4F /* SwiftfulFirebasePackagesExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulFirebasePackagesExampleUITests.swift; sourceTree = "<group>"; };
 		02CEC9C92BD182A800C52D4F /* SwiftfulFirebasePackagesExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulFirebasePackagesExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02CEC9D72BD183C100C52D4F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		02CEC9DA2BD1862800C52D4F /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		02CEC9DF2BD1868100C52D4F /* AppAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAlert.swift; sourceTree = "<group>"; };
+		02CEC9E62BD1886F00C52D4F /* AsButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsButtonViewModifier.swift; sourceTree = "<group>"; };
+		02CEC9E82BD34B0F00C52D4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		02CEC9EB2BD3591700C52D4F /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		02CEC9EE2BD3592B00C52D4F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		02CEC9F02BD35C6300C52D4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CEC9E32BD1881C00C52D4F /* SwiftfulFirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,9 +110,12 @@
 		02CEC9AA2BD182A700C52D4F /* SwiftfulFirebasePackagesExample */ = {
 			isa = PBXGroup;
 			children = (
+				02CEC9F02BD35C6300C52D4F /* Info.plist */,
 				02CEC9AB2BD182A700C52D4F /* SwiftfulFirebasePackagesExampleApp.swift */,
-				02CEC9AD2BD182A700C52D4F /* ContentView.swift */,
+				02CEC9DD2BD1866F00C52D4F /* Components */,
+				02CEC9DC2BD1866C00C52D4F /* Core */,
 				02CEC9AF2BD182A800C52D4F /* Assets.xcassets */,
+				02CEC9E82BD34B0F00C52D4F /* GoogleService-Info.plist */,
 				02CEC9B12BD182A800C52D4F /* SwiftfulFirebasePackagesExample.entitlements */,
 				02CEC9B22BD182A800C52D4F /* Preview Content */,
 			);
@@ -129,6 +147,74 @@
 			path = SwiftfulFirebasePackagesExampleUITests;
 			sourceTree = "<group>";
 		};
+		02CEC9D62BD183B800C52D4F /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				02CEC9D72BD183C100C52D4F /* RootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		02CEC9D92BD1845A00C52D4F /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				02CEC9DA2BD1862800C52D4F /* CreateAccountView.swift */,
+			);
+			path = CreateAccount;
+			sourceTree = "<group>";
+		};
+		02CEC9DC2BD1866C00C52D4F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				02CEC9ED2BD3592400C52D4F /* Settings */,
+				02CEC9EA2BD358D000C52D4F /* Tabbar */,
+				02CEC9D92BD1845A00C52D4F /* CreateAccount */,
+				02CEC9D62BD183B800C52D4F /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		02CEC9DD2BD1866F00C52D4F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				02CEC9E52BD1886600C52D4F /* Buttons */,
+				02CEC9DE2BD1867400C52D4F /* Alerts */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		02CEC9DE2BD1867400C52D4F /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				02CEC9DF2BD1868100C52D4F /* AppAlert.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		02CEC9E52BD1886600C52D4F /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				02CEC9E62BD1886F00C52D4F /* AsButtonViewModifier.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		02CEC9EA2BD358D000C52D4F /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				02CEC9EB2BD3591700C52D4F /* TabbarView.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		02CEC9ED2BD3592400C52D4F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				02CEC9EE2BD3592B00C52D4F /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +231,9 @@
 			dependencies = (
 			);
 			name = SwiftfulFirebasePackagesExample;
+			packageProductDependencies = (
+				02CEC9E22BD1881C00C52D4F /* SwiftfulFirebaseAuth */,
+			);
 			productName = SwiftfulFirebasePackagesExample;
 			productReference = 02CEC9A82BD182A700C52D4F /* SwiftfulFirebasePackagesExample.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +306,9 @@
 				Base,
 			);
 			mainGroup = 02CEC99F2BD182A700C52D4F;
+			packageReferences = (
+				02CEC9E12BD1881C00C52D4F /* XCRemoteSwiftPackageReference "SwiftfulFirebaseAuth" */,
+			);
 			productRefGroup = 02CEC9A92BD182A700C52D4F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02CEC9B42BD182A800C52D4F /* Preview Assets.xcassets in Resources */,
+				02CEC9E92BD34B0F00C52D4F /* GoogleService-Info.plist in Resources */,
 				02CEC9B02BD182A800C52D4F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +352,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02CEC9AE2BD182A700C52D4F /* ContentView.swift in Sources */,
+				02CEC9EF2BD3592B00C52D4F /* SettingsView.swift in Sources */,
+				02CEC9EC2BD3591700C52D4F /* TabbarView.swift in Sources */,
+				02CEC9DB2BD1862800C52D4F /* CreateAccountView.swift in Sources */,
+				02CEC9E72BD1886F00C52D4F /* AsButtonViewModifier.swift in Sources */,
 				02CEC9AC2BD182A700C52D4F /* SwiftfulFirebasePackagesExampleApp.swift in Sources */,
+				02CEC9E02BD1868100C52D4F /* AppAlert.swift in Sources */,
+				02CEC9D82BD183C100C52D4F /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +522,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftfulFirebasePackagesExample/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -462,6 +561,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftfulFirebasePackagesExample/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -617,6 +717,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02CEC9E12BD1881C00C52D4F /* XCRemoteSwiftPackageReference "SwiftfulFirebaseAuth" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulFirebaseAuth.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02CEC9E22BD1881C00C52D4F /* SwiftfulFirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02CEC9E12BD1881C00C52D4F /* XCRemoteSwiftPackageReference "SwiftfulFirebaseAuth" */;
+			productName = SwiftfulFirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 02CEC9A02BD182A700C52D4F /* Project object */;
 }
