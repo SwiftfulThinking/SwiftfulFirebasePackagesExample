@@ -14,6 +14,16 @@
 				<string>com.googleusercontent.apps.1040662140972-gp51vdna05jv490or4n67vshk7sr1mat</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>Phone Recaptcha</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>app-1-1040662140972-ios-2d9d31144f46dc613e9989</string>
+			</array>
+		</dict>
 	</array>
 </dict>
 </plist>

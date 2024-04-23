@@ -15,6 +15,7 @@ struct CreateAccountView: View {
     @Environment(RootState.self) private var root
 
     @State private var errorAlert: AnyAppAlert? = nil
+    @State private var showPhoneView: Bool = false
 
     var body: some View {
         ZStack {
@@ -46,6 +47,17 @@ struct CreateAccountView: View {
                         .asButton {
                             signInWithGoogleButtonPressed()
                         }
+                    
+                    SignInWithPhoneButtonView()
+                        .frame(height: 55)
+                        .asButton {
+                            signInWithPhoneButtonPressed()
+                        }
+                        .fullScreenCover(isPresented: $showPhoneView, content: {
+                            NavigationStack {
+                                SignInPhoneView()
+                            }
+                        })
                 }
                 .padding()
 
@@ -99,6 +111,11 @@ struct CreateAccountView: View {
                 errorAlert = AnyAppAlert(error: error)
             }
         }
+    }
+    
+    @MainActor
+    func signInWithPhoneButtonPressed() {
+        showPhoneView = true
     }
 }
 

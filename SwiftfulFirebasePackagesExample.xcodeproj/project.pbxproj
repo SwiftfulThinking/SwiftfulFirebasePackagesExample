@@ -16,11 +16,12 @@
 		02CEC9D82BD183C100C52D4F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CEC9D72BD183C100C52D4F /* RootView.swift */; };
 		02CEC9DB2BD1862800C52D4F /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CEC9DA2BD1862800C52D4F /* CreateAccountView.swift */; };
 		02CEC9E02BD1868100C52D4F /* AppAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CEC9DF2BD1868100C52D4F /* AppAlert.swift */; };
-		02CEC9E32BD1881C00C52D4F /* SwiftfulFirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 02CEC9E22BD1881C00C52D4F /* SwiftfulFirebaseAuth */; };
 		02CEC9E72BD1886F00C52D4F /* AsButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CEC9E62BD1886F00C52D4F /* AsButtonViewModifier.swift */; };
 		02CEC9E92BD34B0F00C52D4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02CEC9E82BD34B0F00C52D4F /* GoogleService-Info.plist */; };
 		02CEC9EC2BD3591700C52D4F /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CEC9EB2BD3591700C52D4F /* TabbarView.swift */; };
 		02CEC9EF2BD3592B00C52D4F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CEC9EE2BD3592B00C52D4F /* SettingsView.swift */; };
+		02CEC9F82BD3721F00C52D4F /* SignInPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CEC9F72BD3721F00C52D4F /* SignInPhoneView.swift */; };
+		02CEC9FB2BD4287500C52D4F /* SwiftfulFirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 02CEC9FA2BD4287500C52D4F /* SwiftfulFirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		02CEC9EB2BD3591700C52D4F /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		02CEC9EE2BD3592B00C52D4F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		02CEC9F02BD35C6300C52D4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		02CEC9F72BD3721F00C52D4F /* SignInPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPhoneView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02CEC9E32BD1881C00C52D4F /* SwiftfulFirebaseAuth in Frameworks */,
+				02CEC9FB2BD4287500C52D4F /* SwiftfulFirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				02CEC9DA2BD1862800C52D4F /* CreateAccountView.swift */,
+				02CEC9F72BD3721F00C52D4F /* SignInPhoneView.swift */,
 			);
 			path = CreateAccount;
 			sourceTree = "<group>";
@@ -232,7 +235,7 @@
 			);
 			name = SwiftfulFirebasePackagesExample;
 			packageProductDependencies = (
-				02CEC9E22BD1881C00C52D4F /* SwiftfulFirebaseAuth */,
+				02CEC9FA2BD4287500C52D4F /* SwiftfulFirebaseAuth */,
 			);
 			productName = SwiftfulFirebasePackagesExample;
 			productReference = 02CEC9A82BD182A700C52D4F /* SwiftfulFirebasePackagesExample.app */;
@@ -307,7 +310,7 @@
 			);
 			mainGroup = 02CEC99F2BD182A700C52D4F;
 			packageReferences = (
-				02CEC9E12BD1881C00C52D4F /* XCRemoteSwiftPackageReference "SwiftfulFirebaseAuth" */,
+				02CEC9F92BD4287500C52D4F /* XCRemoteSwiftPackageReference "SwiftfulFirebaseAuth" */,
 			);
 			productRefGroup = 02CEC9A92BD182A700C52D4F /* Products */;
 			projectDirPath = "";
@@ -357,6 +360,7 @@
 				02CEC9DB2BD1862800C52D4F /* CreateAccountView.swift in Sources */,
 				02CEC9E72BD1886F00C52D4F /* AsButtonViewModifier.swift in Sources */,
 				02CEC9AC2BD182A700C52D4F /* SwiftfulFirebasePackagesExampleApp.swift in Sources */,
+				02CEC9F82BD3721F00C52D4F /* SignInPhoneView.swift in Sources */,
 				02CEC9E02BD1868100C52D4F /* AppAlert.swift in Sources */,
 				02CEC9D82BD183C100C52D4F /* RootView.swift in Sources */,
 			);
@@ -719,20 +723,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		02CEC9E12BD1881C00C52D4F /* XCRemoteSwiftPackageReference "SwiftfulFirebaseAuth" */ = {
+		02CEC9F92BD4287500C52D4F /* XCRemoteSwiftPackageReference "SwiftfulFirebaseAuth" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulFirebaseAuth.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.4;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		02CEC9E22BD1881C00C52D4F /* SwiftfulFirebaseAuth */ = {
+		02CEC9FA2BD4287500C52D4F /* SwiftfulFirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 02CEC9E12BD1881C00C52D4F /* XCRemoteSwiftPackageReference "SwiftfulFirebaseAuth" */;
+			package = 02CEC9F92BD4287500C52D4F /* XCRemoteSwiftPackageReference "SwiftfulFirebaseAuth" */;
 			productName = SwiftfulFirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
