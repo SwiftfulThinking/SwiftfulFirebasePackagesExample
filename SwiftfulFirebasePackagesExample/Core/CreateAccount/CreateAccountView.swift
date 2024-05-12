@@ -36,6 +36,12 @@ struct CreateAccountView: View {
                 .padding(.top, 24)
                 
                 VStack(spacing: 8) {
+                    SignInAnonymousButtonView()
+                        .frame(height: 55)
+                        .asButton {
+                            signInAnonymousPressed()
+                        }
+
                     SignInWithAppleButtonView()
                         .frame(height: 55)
                         .asButton {
@@ -113,6 +119,23 @@ struct CreateAccountView: View {
         }
     }
     
+    @MainActor
+    func signInAnonymousPressed() {
+        Task {
+            do {
+                let (authUser, isNewUser) = try await authManager.signInAnonymously()
+                root.updateViewState(showTabbar: true)
+                print("HI NICK")
+                
+                print(authUser)
+
+            } catch {
+                // Error signing in (user still not signed in)
+                // Show alert
+                errorAlert = AnyAppAlert(error: error)
+            }
+        }
+    }
     @MainActor
     func signInWithPhoneButtonPressed() {
         showPhoneView = true
