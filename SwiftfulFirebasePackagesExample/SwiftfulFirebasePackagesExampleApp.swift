@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
-import SwiftfulFirebaseAuth
+import SwiftfulAuthenticating
+import SwiftfulAuthenticatingFirebase
+import SwiftfulLogging
 import Firebase
 
 @main
@@ -17,7 +19,10 @@ struct SwiftfulFirebasePackagesExampleApp: App {
     var body: some Scene {
         WindowGroup {
             RootView()
-                .environment(\.auth, AuthManager(configuration: .firebase))
+                .environment(AuthManager(
+                    service: FirebaseAuthService(),
+                    logger: LogManager(services: [ConsoleService(printParameters: false)])
+                ))
         }
     }
 }
@@ -28,21 +33,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        Auth.auth().setAPNSToken(deviceToken, type: .prod)
-    }
-
-    func application(_ application: UIApplication, didReceiveRemoteNotification notification: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        if Auth.auth().canHandleNotification(notification) {
-            completionHandler(.noData)
-            return
-        }
-    }
-    
-    func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
-        if Auth.auth().canHandle(url) {
-            return true
-        }
-        return false
-    }
+//    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+//        Auth.auth().setAPNSToken(deviceToken, type: .prod)
+//    }
+//
+//    func application(_ application: UIApplication, didReceiveRemoteNotification notification: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+//        if Auth.auth().canHandleNotification(notification) {
+//            completionHandler(.noData)
+//            return
+//        }
+//    }
+//    
+//    func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+//        if Auth.auth().canHandle(url) {
+//            return true
+//        }
+//        return false
+//    }
 }

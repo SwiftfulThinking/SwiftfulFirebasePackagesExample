@@ -7,11 +7,12 @@
 
 import SwiftUI
 import Firebase
-import SwiftfulFirebaseAuth
+import SwiftfulAuthenticating
+import SwiftfulAuthUI
 
 struct SettingsView: View {
     
-    @Environment(\.auth) private var authManager
+    @Environment(AuthManager.self) private var authManager
     @Environment(RootState.self) private var root
 
     @State private var userIsAnonymous: Bool = false
@@ -26,7 +27,7 @@ struct SettingsView: View {
                 
                 if userIsAnonymous {
                     VStack {
-                        SignInWithAppleButtonView()
+                        SignInAppleButtonView()
                             .frame(height: 55)
                             .asButton {
                                 Task { @MainActor in
@@ -48,7 +49,7 @@ struct SettingsView: View {
             }
             .navigationTitle("Settings")
             .onAppear {
-                userIsAnonymous = authManager.currentUser.profile?.isAnonymous == true
+                userIsAnonymous = authManager.auth?.isAnonymous == true
             }
         }
     }

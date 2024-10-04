@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
-import SwiftfulFirebaseAuth
+import SwiftfulAuthenticating
+import SwiftfulAuthUI
 import Firebase
 
 struct CreateAccountView: View {
     
-    @Environment(\.auth) private var authManager
+    @Environment(AuthManager.self) private var authManager
     @Environment(RootState.self) private var root
 
     @State private var errorAlert: AnyAppAlert? = nil
@@ -42,28 +43,28 @@ struct CreateAccountView: View {
                             signInAnonymousPressed()
                         }
 
-                    SignInWithAppleButtonView()
+                    SignInAppleButtonView()
                         .frame(height: 55)
                         .asButton {
                             signInWithAppleButtonPressed()
                         }
 
-                    SignInWithGoogleButtonView()
+                    SignInGoogleButtonView()
                         .frame(height: 55)
                         .asButton {
                             signInWithGoogleButtonPressed()
                         }
                     
-                    SignInWithPhoneButtonView()
-                        .frame(height: 55)
-                        .asButton {
-                            signInWithPhoneButtonPressed()
-                        }
-                        .fullScreenCover(isPresented: $showPhoneView, content: {
-                            NavigationStack {
-                                SignInPhoneView()
-                            }
-                        })
+//                    SignInWithPhoneButtonView()
+//                        .frame(height: 55)
+//                        .asButton {
+//                            signInWithPhoneButtonPressed()
+//                        }
+//                        .fullScreenCover(isPresented: $showPhoneView, content: {
+//                            NavigationStack {
+//                                SignInPhoneView()
+//                            }
+//                        })
                 }
                 .padding()
 
@@ -123,12 +124,8 @@ struct CreateAccountView: View {
     func signInAnonymousPressed() {
         Task {
             do {
-                let (authUser, isNewUser) = try await authManager.signInAnonymously()
+                let (authUser, isNewUser) = try await authManager.signInAnonymous()
                 root.updateViewState(showTabbar: true)
-                print("HI NICK")
-                
-                print(authUser)
-
             } catch {
                 // Error signing in (user still not signed in)
                 // Show alert

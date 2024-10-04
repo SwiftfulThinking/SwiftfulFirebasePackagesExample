@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0244C2A72BF11E97009DC3F3 /* SwiftfulFirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0244C2A62BF11E97009DC3F3 /* SwiftfulFirebaseAuth */; };
+		022E86722CAF7301002CD9EA /* SwiftfulAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = 022E86712CAF7301002CD9EA /* SwiftfulAuthUI */; };
+		022E86742CAF7301002CD9EA /* SwiftfulAuthenticating in Frameworks */ = {isa = PBXBuildFile; productRef = 022E86732CAF7301002CD9EA /* SwiftfulAuthenticating */; };
+		022E86772CAF7404002CD9EA /* SwiftfulAuthenticatingFirebase in Frameworks */ = {isa = PBXBuildFile; productRef = 022E86762CAF7404002CD9EA /* SwiftfulAuthenticatingFirebase */; };
 		02CEC9AC2BD182A700C52D4F /* SwiftfulFirebasePackagesExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CEC9AB2BD182A700C52D4F /* SwiftfulFirebasePackagesExampleApp.swift */; };
 		02CEC9B02BD182A800C52D4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02CEC9AF2BD182A800C52D4F /* Assets.xcassets */; };
 		02CEC9B42BD182A800C52D4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02CEC9B32BD182A800C52D4F /* Preview Assets.xcassets */; };
@@ -68,7 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0244C2A72BF11E97009DC3F3 /* SwiftfulFirebaseAuth in Frameworks */,
+				022E86772CAF7404002CD9EA /* SwiftfulAuthenticatingFirebase in Frameworks */,
+				022E86742CAF7301002CD9EA /* SwiftfulAuthenticating in Frameworks */,
+				022E86722CAF7301002CD9EA /* SwiftfulAuthUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +239,9 @@
 			);
 			name = SwiftfulFirebasePackagesExample;
 			packageProductDependencies = (
-				0244C2A62BF11E97009DC3F3 /* SwiftfulFirebaseAuth */,
+				022E86712CAF7301002CD9EA /* SwiftfulAuthUI */,
+				022E86732CAF7301002CD9EA /* SwiftfulAuthenticating */,
+				022E86762CAF7404002CD9EA /* SwiftfulAuthenticatingFirebase */,
 			);
 			productName = SwiftfulFirebasePackagesExample;
 			productReference = 02CEC9A82BD182A700C52D4F /* SwiftfulFirebasePackagesExample.app */;
@@ -310,7 +316,8 @@
 			);
 			mainGroup = 02CEC99F2BD182A700C52D4F;
 			packageReferences = (
-				0244C2A52BF11E97009DC3F3 /* XCRemoteSwiftPackageReference "SwiftfulFirebaseAuth" */,
+				022E86702CAF7301002CD9EA /* XCRemoteSwiftPackageReference "SwiftfulAuthenticating" */,
+				022E86752CAF7404002CD9EA /* XCRemoteSwiftPackageReference "SwiftfulAuthenticatingFirebase" */,
 			);
 			productRefGroup = 02CEC9A92BD182A700C52D4F /* Products */;
 			projectDirPath = "";
@@ -723,21 +730,39 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0244C2A52BF11E97009DC3F3 /* XCRemoteSwiftPackageReference "SwiftfulFirebaseAuth" */ = {
+		022E86702CAF7301002CD9EA /* XCRemoteSwiftPackageReference "SwiftfulAuthenticating" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulFirebaseAuth";
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulAuthenticating";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.6;
+				branch = main;
+				kind = branch;
+			};
+		};
+		022E86752CAF7404002CD9EA /* XCRemoteSwiftPackageReference "SwiftfulAuthenticatingFirebase" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulAuthenticatingFirebase";
+			requirement = {
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0244C2A62BF11E97009DC3F3 /* SwiftfulFirebaseAuth */ = {
+		022E86712CAF7301002CD9EA /* SwiftfulAuthUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0244C2A52BF11E97009DC3F3 /* XCRemoteSwiftPackageReference "SwiftfulFirebaseAuth" */;
-			productName = SwiftfulFirebaseAuth;
+			package = 022E86702CAF7301002CD9EA /* XCRemoteSwiftPackageReference "SwiftfulAuthenticating" */;
+			productName = SwiftfulAuthUI;
+		};
+		022E86732CAF7301002CD9EA /* SwiftfulAuthenticating */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 022E86702CAF7301002CD9EA /* XCRemoteSwiftPackageReference "SwiftfulAuthenticating" */;
+			productName = SwiftfulAuthenticating;
+		};
+		022E86762CAF7404002CD9EA /* SwiftfulAuthenticatingFirebase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 022E86752CAF7404002CD9EA /* XCRemoteSwiftPackageReference "SwiftfulAuthenticatingFirebase" */;
+			productName = SwiftfulAuthenticatingFirebase;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
